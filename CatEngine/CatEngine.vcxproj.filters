@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CatEngine">
+      <UniqueIdentifier>{B311F87D-1F7C-ACF4-68BA-5D9AD4638A49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CatEngine\Core">
+      <UniqueIdentifier>{EB3DAF45-D70B-A34B-C09F-1372AC0C7FB0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CatEngine.h" />
+    <ClInclude Include="src\CatEngine\Core\EntryPoint.h">
+      <Filter>CatEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CatEngine\Engine.h">
+      <Filter>CatEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CatEngine\Engine.cpp">
+      <Filter>CatEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp" />
+  </ItemGroup>
+</Project>
