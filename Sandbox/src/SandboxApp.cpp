@@ -4,7 +4,9 @@ class Sandbox : public CatEngine::Application
 {
 public:
 	Sandbox()
-	{}
+	{
+		
+	}
 
 	~Sandbox()
 	{}

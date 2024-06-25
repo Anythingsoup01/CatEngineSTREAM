@@ -1,11 +1,11 @@
+#include "cepch.h"
 #include "Engine.h"
-#include <iostream>
 
 namespace CatEngine
 {
 	Application::Application()
 	{
-
+		
 	}
 
 	Application::~Application()

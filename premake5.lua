@@ -29,6 +29,7 @@ project "Sandbox"
 
 	includedirs{
 		"CatEngine/src",
+		"CatEngine/vendors/spdlog/include",
 	}
 
 	links{
@@ -64,6 +65,9 @@ project "CatEngine"
 	targetdir ("bin/" ..outputdir.. "/%{prj.name}")
 	objdir ("bin-int/" ..outputdir.. "/%{prj.name}")
 
+	pchheader = "cepch.h"
+	pchsource = "%{prj.name}/src/cepch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
@@ -71,6 +75,7 @@ project "CatEngine"
 
 	includedirs{
 		"%{prj.name}/src",
+		"%{prj.name}/vendors/spdlog/include",
 	}
 
 		defines

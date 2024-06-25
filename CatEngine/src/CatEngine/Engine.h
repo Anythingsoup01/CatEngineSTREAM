@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Core/Log.h"
+
 namespace CatEngine
 {
 	class Application

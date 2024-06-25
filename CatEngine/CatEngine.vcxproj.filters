@@ -7,21 +7,33 @@
     <Filter Include="CatEngine\Core">
       <UniqueIdentifier>{EB3DAF45-D70B-A34B-C09F-1372AC0C7FB0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CatEngine\Events">
+      <UniqueIdentifier>{37769873-236F-B7C5-4CA1-9C4A38F996D1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\CatEngine.h" />
     <ClInclude Include="src\CatEngine\Core\EntryPoint.h">
       <Filter>CatEngine\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\CatEngine\Core\Log.h">
+      <Filter>CatEngine\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\CatEngine\Engine.h">
       <Filter>CatEngine</Filter>
     </ClInclude>
-    <ClInclude Include="Log.h" />
+    <ClInclude Include="src\CatEngine\Events\Event.h">
+      <Filter>CatEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cepch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\CatEngine\Core\Log.cpp">
+      <Filter>CatEngine\Core</Filter>
+    </ClCompile>
     <ClCompile Include="src\CatEngine\Engine.cpp">
       <Filter>CatEngine</Filter>
     </ClCompile>
-    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="src\cepch.cpp" />
   </ItemGroup>
 </Project>
