@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Core/Log.h"
+#include "Events/Event.h"
+#include "Events/ApplicationEvent.h"
 
 namespace CatEngine
 {

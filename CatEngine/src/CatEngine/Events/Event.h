@@ -26,7 +26,7 @@ namespace CatEngine
                                   virtual EventType GetEventType() const override { return GetStaticType(); } \
                                   virtual const char* GetName() const override { return #type; }
 
-#	define EVENT_CLASS_CATEGORY(catagory) virtual int GetCategoryFlags() const override { return category; }
+#	define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
 	class Event
 	{
@@ -47,7 +47,7 @@ namespace CatEngine
 	class EventDispatcher
 	{
 		template<typename T>
-		using EventFn = std::function<Event& event>;
+		using EventFn = std::function<bool(T&)>;
 	public:
 		EventDispatcher(Event& event)
 			: m_Event(event) {}

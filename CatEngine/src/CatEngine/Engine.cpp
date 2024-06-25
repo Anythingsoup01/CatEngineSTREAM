@@ -5,7 +5,8 @@ namespace CatEngine
 {
 	Application::Application()
 	{
-		
+		WindowClosedEvent e;
+		API_INFO(e.ToString());
 	}
 
 	Application::~Application()
