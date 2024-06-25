@@ -10,6 +10,12 @@
     <Filter Include="CatEngine\Events">
       <UniqueIdentifier>{37769873-236F-B7C5-4CA1-9C4A38F996D1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\CatEngine.h" />
@@ -19,13 +25,30 @@
     <ClInclude Include="src\CatEngine\Core\Log.h">
       <Filter>CatEngine\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\CatEngine\Core\Window.h">
+      <Filter>CatEngine\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\CatEngine\Engine.h">
       <Filter>CatEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CatEngine\Events\ApplicationEvent.h">
+      <Filter>CatEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\CatEngine\Events\Event.h">
       <Filter>CatEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\CatEngine\Events\KeyEvent.h">
+      <Filter>CatEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CatEngine\Events\MouseEvent.h">
+      <Filter>CatEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\cepch.h" />
+    <ClInclude Include="src\CatEngine\Layers\LayerStack.h" />
+    <ClInclude Include="src\CatEngine\Layers\Layer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CatEngine\Core\Log.cpp">
@@ -34,6 +57,11 @@
     <ClCompile Include="src\CatEngine\Engine.cpp">
       <Filter>CatEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\cepch.cpp" />
+    <ClCompile Include="src\CatEngine\Layers\LayerStack.cpp" />
+    <ClCompile Include="src\CatEngine\Layers\Layer.cpp" />
   </ItemGroup>
 </Project>

@@ -26,7 +26,7 @@ namespace CatEngine
 #define API_WARN(...)                  ::CatEngine::Log::GetAPILogger()->warn(__VA_ARGS__)
 #define API_INFO(...)                  ::CatEngine::Log::GetAPILogger()->info(__VA_ARGS__)
 #define API_TRACE(...)                 ::CatEngine::Log::GetAPILogger()->trace(__VA_ARGS__)
-#define API_ASSERT(x, ...) if (!(x)) { ::CatEngine::Log::GetAPILogger()->critical(__VA_ARGS__); __debugbreak() }
+#define API_ASSERT(x, ...) if (!(x)) { ::CatEngine::Log::GetAPILogger()->critical(__VA_ARGS__); __debugbreak(); }
 // ENGINE SPECIFIC LOGGING
 #define CLI_CRITICAL(...)              ::CatEngine::Log::GetCLILogger()->critical(__VA_ARGS__)
 #define CLI_ERROR(...)                 ::CatEngine::Log::GetCLILogger()->error(__VA_ARGS__)
